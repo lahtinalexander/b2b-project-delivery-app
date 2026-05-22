@@ -1,0 +1,7 @@
+.sfdx/
+.sf/
+.localSourceTracking/
+.vscode/
+.DS_Store
+*.log
+**/force-app/main/default/staticresources/*.resource
