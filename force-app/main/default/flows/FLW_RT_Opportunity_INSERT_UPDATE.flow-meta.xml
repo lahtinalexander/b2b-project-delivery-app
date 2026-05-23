@@ -125,12 +125,6 @@
                 <elementReference>frmStartDate</elementReference>
             </value>
         </inputAssignments>
-        <inputAssignments>
-            <field>Type__c</field>
-            <value>
-                <stringValue>Fixprice</stringValue>
-            </value>
-        </inputAssignments>
         <object>Project__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
@@ -153,5 +147,5 @@
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
 </Flow>
