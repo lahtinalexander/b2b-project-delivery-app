@@ -8,6 +8,7 @@
     <columns>AccountId__c</columns>
     <columns>Project_Manager__c</columns>
     <columns>Budget__c</columns>
+    <columns>Status__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>
