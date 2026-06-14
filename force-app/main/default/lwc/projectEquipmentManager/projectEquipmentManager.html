@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Project Equipment Manager" icon-name="custom:custom13">
+        <div class="slds-var-m-around_medium">
+            <template if:true={hasEquipment}>
+                <div style="height: 250px;">
+                    <lightning-datatable
+                        key-field="id"
+                        data={equipmentData}
+                        columns={columns}
+                        onrowselection={handleRowSelection}>
+                    </lightning-datatable>
+                </div>
+                <div class="slds-var-m-top_medium slds-text-align_right">
+                    <lightning-button 
+                        label="Привязать к проекту" 
+                        variant="brand" 
+                        onclick={handleAssign}
+                        disabled={isButtonDisabled}>
+                    </lightning-button>
+                </div>
+            </template>
+
+            <template if:false={hasEquipment}>
+                <p class="slds-text-color_weak slds-text-align_center">
+                    Нет доступного активного оборудования для этого клиента.
+                </p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
